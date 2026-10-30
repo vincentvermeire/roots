@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "local-example": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["/path/to/reviewed-server.mjs"],
+      "env": { "LOG_LEVEL": { "value": "info" }, "API_TOKEN": { "env": "EXAMPLE_MCP_TOKEN" } },
+      "profiles": ["alpha"]
+    },
+    "remote-example": {
+      "type": "http",
+      "url": "https://example.com/mcp",
+      "headers": { "Authorization": { "env": "EXAMPLE_MCP_AUTHORIZATION" } },
+      "profiles": ["alpha", "beta"]
+    }
+  }
+}

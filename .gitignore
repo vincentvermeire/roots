@@ -1,0 +1,21 @@
+node_modules/
+coverage/
+*.tgz
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
+# Runtime data and local configuration belong outside this repository.
+.roots/
+state/
+reports/
+config.local.json
+/config.json
+/mcp.json
+/skills/
+/scout.lock
+auth.json
+credentials.json
+.DS_Store
+Thumbs.db

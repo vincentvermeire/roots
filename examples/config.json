@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "defaultTool": "codex",
+  "gateways": {
+    "local": {
+      "openaiBaseUrl": "http://localhost:4000/v1",
+      "anthropicBaseUrl": "http://localhost:4000"
+    }
+  },
+  "profiles": {
+    "alpha": {
+      "gateway": "local",
+      "credential": { "env": "PROJECT_ALPHA_KEY" },
+      "models": { "codex": "your-code-model", "claude": "your-chat-model", "opencode": "your-code-model" },
+      "opencodeSchema": 2
+    },
+    "beta": {
+      "gateway": "local",
+      "credential": { "env": "PROJECT_BETA_KEY" },
+      "models": { "codex": "your-code-model" }
+    }
+  },
+  "projects": {},
+  "scout": { "sources": [] }
+}
